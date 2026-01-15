@@ -1,4 +1,4 @@
-<div align="center"><center>
+<div align="center">
 
 # Time Stop Clock
 
@@ -10,7 +10,7 @@
 [![Modrinth](https://img.shields.io/modrinth/dt/time-stop-clock-mod?color=00AF5C&label=downloads&logo=modrinth)](https://modrinth.com/mod/time-stop-clock-mod)
 [![CurseForge](https://cf.way2muchnoise.eu/full_690991_downloads.svg)](https://curseforge.com/minecraft/mc-mods/time-stop-clock-mod)
 
-</center></div>
+</div>
 
 ## Features:
 Version 1.19.x has been removed, and this mod has been completely rewritten.
@@ -27,26 +27,28 @@ Migrate to [Cloth Config API](https://modrinth.com/mod/cloth-config) from Previo
 - Time inside the box is in a frozen state, and it can only freeze entities, blocks, liquids, and particles. Due to technical limitations, it can only be generated via commands or spells.
 The Time Box can be reversed through the configuration file. After reversal, time outside the Time Box will be in a frozen state, while time inside the box remains normal.
 #### Commands:
-- /timeclock tickrate <value> - Set the game tickrate
-- /timeclock pauseTime <true/false> - Set whether to enable time stop, can be used to forcibly enable or disable time stop
-- /timeclock whitelist list - View the whitelist
-- /timeclock whitelist list <true/false> - Same as above, but choose whether to output to the log
-- /timeclock whitelist clear  - Remove all entities in the whitelist
-- /timeclock whitelist remove <target> - Remove the target from the whitelist
-- /timeclock whitelist remove uuid <UUID> - Remove the UUID from the whitelist.
-- /timeclock whitelist add <target> - Add the target to the whitelist.
-- /timeclock config reload  - Reload the config (required after making modifications to the external config file).v2.0.0+ Removed.
-- /timeclock timebox add <id> <min> <max> <expandAfterCreation> <changeSpeed>
-- /timeclock timebox add <id> <min> <max> <expandAfterCreation> <changeSpeed> <color>
-- /timeclock timebox add <id> <min> <max> <expandAfterCreation> <changeSpeed> <color> <alpha>
-- /timeclock timebox add <id> <min> <max> <expandAfterCreation> <changeSpeed> <color> <alpha> <tick>
-- /timeclock timebox add <id> <min> <max> <expandAfterCreation> <changeSpeed> <color> <alpha> <tick> <removeAnimation>
-- /timeclock timebox add <id> <min> <max> <expandAfterCreation> <changeSpeed> <color> <alpha> <tick> <removeAnimation> <startCenter>
-- /timeclock timebox remove <id
-- /timeclock timebox clear
-- /timeclock timebox list <logging> 
-- /timeclock timebox modify <id>[<active/color/expandAfterCreation/changeSpeed>] <active/color/expandAfterCreation/speed>
-- /timeclock timebox modify <id> [<color>] <color> <alpha>
+```
+/timeclock tickrate <value> - Set the game tickrate
+/timeclock pauseTime <true/false> - Set whether to enable time stop, can be used to forcibly enable or disable time stop
+/timeclock whitelist list - View the whitelist
+/timeclock whitelist list <true/false> - Same as above, but choose whether to output to the log
+/timeclock whitelist clear  - Remove all entities in the whitelist
+/timeclock whitelist remove <target> - Remove the target from the whitelist
+/timeclock whitelist remove uuid <UUID> - Remove the UUID from the whitelist.
+/timeclock whitelist add <target> - Add the target to the whitelist.
+/timeclock config reload  - Reload the config (required after making modifications to the external config file).v2.0.0+ Removed.
+/timeclock timebox add <id> <min> <max> <expandAfterCreation> <changeSpeed>
+/timeclock timebox add <id> <min> <max> <expandAfterCreation> <changeSpeed> <color>
+/timeclock timebox add <id> <min> <max> <expandAfterCreation> <changeSpeed> <color> <alpha>
+/timeclock timebox add <id> <min> <max> <expandAfterCreation> <changeSpeed> <color> <alpha> <tick>
+/timeclock timebox add <id> <min> <max> <expandAfterCreation> <changeSpeed> <color> <alpha> <tick> <removeAnimation>
+/timeclock timebox add <id> <min> <max> <expandAfterCreation> <changeSpeed> <color> <alpha> <tick> <removeAnimation> <startCenter>
+/timeclock timebox remove <id>
+/timeclock timebox clear
+/timeclock timebox list <logging>
+/timeclock timebox modify <id>[<active/color/expandAfterCreation/changeSpeed>] <active/color/expandAfterCreation/speed>
+/timeclock timebox modify <id> [<color>] <color> <alpha>
+```
 
 #### Key Bindings
 - Left Ctrl + Mouse Wheel - Toggle time clock mode
